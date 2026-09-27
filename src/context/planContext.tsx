@@ -21,7 +21,9 @@ export type WorkoutItem = {
   image: string;
   description: string;
   instructions: string[];
-  completed?: boolean;
+
+  // Workout complete status
+  isDone?: boolean;
 };
 
 // =========================================
@@ -125,7 +127,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
         ...prev,
         {
           ...workout,
-          completed: false,
+          isDone: false,
         },
       ];
     });
@@ -173,7 +175,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
         item.id === id
           ? {
               ...item,
-              completed: !item.completed,
+              isDone: !item.isDone,
             }
           : item,
       ),
