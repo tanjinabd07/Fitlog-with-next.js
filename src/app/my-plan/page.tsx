@@ -148,6 +148,7 @@ export default function MyPlanPage() {
                 <option value="duration">Duration</option>
 
                 <option value="calories">Calories</option>
+                <option value="rating">Rating</option>
               </select>
             </div>
           )}
