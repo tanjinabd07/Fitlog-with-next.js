@@ -15,8 +15,8 @@ const Navbar = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="sticky top-0 z-[100] border-b border-[#1d1d20] bg-[#0b0c0f] px-5 py-4">
-      <div className="mx-auto flex h-10 max-w-[1400px] items-center justify-between">
+    <nav className=" sticky top-0 z-[100] border-b border-[#1d1d20] bg-[#0b0c0f] px-5 py-4">
+      <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-5 md:px-8 lg:px-10">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
